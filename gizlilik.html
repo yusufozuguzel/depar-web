@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DEPAR - Gizlilik Politikası</title>
+    <title>DEPAR - Halı Saha | Gizlilik Politikası</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -14,7 +14,7 @@
             max-width: 800px;
             margin: auto;
         }
-        h1, h2 { color: #1ED760; /* Depar Neon Yeşil */ }
+        h1, h2, h3 { color: #1ED760; /* Depar Neon Yeşil */ }
         h1 { text-align: center; border-bottom: 2px solid #1ED760; padding-bottom: 10px; }
         .container {
             background-color: rgba(255, 255, 255, 0.05);
@@ -22,36 +22,57 @@
             border-radius: 12px;
             margin-top: 20px;
         }
+        .delete-box {
+            background-color: rgba(30, 215, 96, 0.08);
+            border-left: 4px solid #1ED760;
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
         a { color: #1ED760; text-decoration: none; font-weight: bold; }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>DEPAR GİZLİLİK POLİTİKASI</h1>
-        <p><strong>Son Güncelleme Tarihi:</strong> 02.05.2026</p>
+        <h1>DEPAR - HALI SAHA<br>GİZLİLİK POLİTİKASI</h1>
+        <p><strong>Son Güncelleme Tarihi:</strong> 23.11.2026</p>
         
-        <p>Depar uygulaması olarak kişisel verilerinizin güvenliğine ve gizliliğine büyük önem veriyoruz. Bu Gizlilik Politikası, uygulamamızı kullanırken hangi verilerinizi topladığımızı, nasıl kullandığımızı ve nasıl koruduğumuzu açıklamaktadır.</p>
+        <p><strong>DEPAR - Halı Saha</strong> uygulaması olarak kişisel verilerinizin güvenliğine ve gizliliğine büyük önem veriyoruz. Bu Gizlilik Politikası, uygulamamızı kullanırken hangi verilerinizi topladığımızı, nasıl kullandığımızı, nasıl koruduğumuzu ve hesabınızı nasıl silebileceğinizi açıklamaktadır.</p>
 
         <h2>1. Hangi Verileri Topluyoruz?</h2>
         <ul>
-            <li><strong>Kişisel Bilgiler:</strong> Ad soyad, e-posta adresi ve şifre (Kendi e-postanızla veya "Google ile Giriş Yap" seçeneğiyle kayıt olduğunuzda).</li>
-            <li><strong>Profil Verileri:</strong> Uygulama içi oluşturduğunuz avatar veya profil fotoğrafı.</li>
-            <li><strong>Konum Bilgileri:</strong> Harita üzerinden saha seçimi yaparken ve adresleri ayrıştırırken anlık konum verilerinizi veya seçtiğiniz konumları işleriz.</li>
+            <li><strong>Kişisel Bilgiler:</strong> Ad soyad, e-posta adresi, kullanıcı kimliği (UID) ve şifre (kendi e-postanızla veya "Google ile Giriş Yap" seçeneğiyle kayıt olduğunuzda).</li>
+            <li><strong>Profil Verileri:</strong> Uygulama içi oluşturduğunuz avatar veya yüklediğiniz profil fotoğrafı.</li>
+            <li><strong>Konum Bilgileri:</strong> Harita üzerinden saha seçimi yaparken ve yakın sahaları listelerken anlık (yaklaşık veya tam) konum verilerinizi ya da seçtiğiniz konumları işleriz.</li>
+            <li><strong>Uygulama İçi Etkileşimler:</strong> Oluşturduğunuz maç bilgileri ve uygulama içi iletişim verileri.</li>
         </ul>
 
         <h2>2. Verileri Nasıl Kullanıyoruz?</h2>
         <ul>
-            <li>Hesabınızı oluşturmak ve güvenliğini sağlamak.</li>
+            <li>Hesabınızı oluşturmak, yönetmek ve güvenliğini sağlamak.</li>
             <li>Halı saha maçları organize etmenizi, maçlara katılmanızı ve saha bulmanızı sağlamak.</li>
             <li>Arkadaşlarınızı bulmanız ve etkileşime geçmeniz için uygulama içi özellikleri sunmak.</li>
             <li>Uygulama hatalarını gidermek ve kullanıcı deneyimini iyileştirmek.</li>
         </ul>
 
         <h2>3. Verilerin Üçüncü Taraflarla Paylaşımı</h2>
-        <p>Kullanıcı verilerinizi asla reklam amacıyla satmayız. Ancak hizmeti sağlayabilmek için güvenilir altyapı sağlayıcılarıyla çalışırız: Google, Firebase ve Harita servisleri.</p>
+        <p>Kullanıcı verilerinizi asla reklam amacıyla üçüncü taraflarla paylaşmaz veya satmayız. Yalnızca uygulama altyapısını ve temel işlevleri sağlayabilmek için güvenilir hizmet sağlayıcılarıyla çalışırız: Google, Firebase ve Google Haritalar servisleri.</p>
 
-        <h2>4. Veri Güvenliği ve Silme Hakkı</h2>
-        <p>Verileriniz güvenli sunucularda şifrelenmiş olarak saklanır. Kullanıcılar, uygulama içi ayarlar menüsünden veya <strong><a href="mailto:destekdepar@gmail.com">destekdepar@gmail.com</a></strong> adresine e-posta göndererek hesaplarının ve tüm kişisel verilerinin kalıcı olarak silinmesini talep edebilirler.</p>
+        <h2 id="hesap-silme">4. Veri Güvenliği ve Hesap Silme Hakkı</h2>
+        <p>Tüm kullanıcı verileriniz aktarım sırasında (HTTPS/TLS) ve sunucularımızda şifrelenerek güvenli şekilde saklanır.</p>
+
+        <div class="delete-box">
+            <h3>DEPAR - Halı Saha Hesabınızı Nasıl Silebilirsiniz?</h3>
+            <p>Hesabınızın ve ilişkili tüm verilerinizin kalıcı olarak silinmesini iki yöntemden biriyle talep edebilirsiniz:</p>
+            <ul>
+                <li><strong>Uygulama İçinden:</strong> Uygulamaya giriş yaptıktan sonra <strong>Profil → Hesabı Sil</strong> adımlarını izleyerek hesabınızı doğrudan silebilirsiniz.</li>
+                <li><strong>E-posta ile (Uygulama Dışından):</strong> Hesabınıza kayıtlı e-posta adresinizi belirterek <strong><a href="mailto:destekdepar@gmail.com">destekdepar@gmail.com</a></strong> adresine <em>"Hesap Silme Talebi"</em> konulu bir e-posta gönderebilirsiniz.</li>
+            </ul>
+            <p><strong>Silinen Veriler ve Saklama Süresi:</strong> Silme talebiniz işleme alındığında ad soyad, e-posta adresi, kullanıcı kimliği, profil fotoğrafı ve hesabınızla ilişkili tüm kişisel verileriniz <strong>en geç 7 gün içinde</strong> sistemlerimizden kalıcı olarak silinir. İşlem tamamlandıktan sonra tarafımızda hiçbir kişisel veriniz saklanmaz.</p>
+        </div>
+
+        <h2>5. İletişim</h2>
+        <p>Gizlilik politikamız veya verilerinizle ilgili her türlü soru ve talebiniz için <strong><a href="mailto:destekdepar@gmail.com">destekdepar@gmail.com</a></strong> adresinden bize ulaşabilirsiniz.</p>
     </div>
 </body>
 </html>
